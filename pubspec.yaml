@@ -1,0 +1,72 @@
+name: clean_architecture_template
+description: A Flutter Clean Architecture template with scalable and maintainable structure.
+
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`.
+publish_to: 'none' 
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  
+  # State Management
+  flutter_bloc: ^8.1.2
+  bloc: ^8.1.2
+  equatable: ^2.0.5
+  
+  # Functional Programming
+  dartz: ^0.10.1
+  
+  # Dependency Injection
+  get_it: ^7.6.0
+  
+  # Network
+  dio: ^5.3.0
+  connectivity_plus: ^4.0.1
+  
+  # Storage
+  shared_preferences: ^2.2.0
+  sqflite: ^2.3.0
+  path: ^1.8.3
+  
+  # UI
+  cached_network_image: ^3.2.3
+  flutter_svg: ^2.0.7
+  shimmer: ^3.0.0
+  
+  # Utils
+  intl: ^0.18.0
+  logger: ^1.4.0
+  uuid: ^3.0.7
+  path_provider: ^2.0.15
+  url_launcher: ^6.1.12
+  
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  mockito: ^5.4.2
+  bloc_test: ^9.1.4
+  build_runner: ^2.4.6
+  flutter_lints: ^2.0.2
+
+flutter:
+  uses-material-design: true
+  
+  assets:
+    - assets/images/
+    - assets/icons/
+
+  fonts:
+    - family: Roboto
+      fonts:
+        - asset: assets/fonts/Roboto-Regular.ttf
+        - asset: assets/fonts/Roboto-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Roboto-Bold.ttf
+          weight: 700 
